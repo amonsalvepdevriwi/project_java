@@ -39,12 +39,12 @@ El proyecto se construirá paso a paso, partiendo de una estructura base con **S
 El proyecto adoptará una **arquitectura limpia inspirada en DDD (Domain-Driven Design)**, estructurada de la siguiente forma:
 
 com.riwi.academico
-├─ domain/ → Entidades, objetos de valor y servicios de dominio
-├─ application/ → Casos de uso y lógica de negocio
-├─ infrastructure/ → Adaptadores técnicos (JPA, seguridad, configuración)
-├─ web/ → Controladores y DTOs de presentación
-├─ config/ → Beans y configuración general
-└─ tests/ → Pruebas unitarias e integración
+ ├─ domain/                  → Entidades, objetos de valor y servicios de dominio
+ ├─ application/             → Casos de uso y lógica de negocio
+ ├─ infrastructure/          → Adaptadores técnicos (JPA, seguridad, configuración)
+ ├─ web/                     → Controladores y DTOs de presentación
+ ├─ config/                  → Beans y configuración general
+ └─ tests/                   → Pruebas unitarias e integración
 
 
 ---
@@ -52,9 +52,9 @@ com.riwi.academico
 ## 🔁 Flujo de Dependencias
 
 Controller → Service → Repository → Database
-↘ ↑
-↘----------↙
-Dominio y Casos de Uso
+         ↘             ↑
+          ↘----------↙
+          Dominio y Casos de Uso
 
 
 ### Capas principales:
